@@ -1,0 +1,849 @@
+1. C:\Users\Asus>arp
+
+Displays and modifies the IP-to-Physical address translation tables used by
+address resolution protocol (ARP).
+
+ARP -s inet_addr eth_addr [if_addr]
+ARP -d inet_addr [if_addr]
+ARP -a [inet_addr] [-N if_addr] [-v]
+
+  -a            Displays current ARP entries by interrogating the current
+                protocol data.  If inet_addr is specified, the IP and Physical
+                addresses for only the specified computer are displayed.  If
+                more than one network interface uses ARP, entries for each ARP
+                table are displayed.
+  -g            Same as -a.
+  -v            Displays current ARP entries in verbose mode.  All invalid
+                entries and entries on the loop-back interface will be shown.
+  inet_addr     Specifies an internet address.
+  -N if_addr    Displays the ARP entries for the network interface specified
+                by if_addr.
+  -d            Deletes the host specified by inet_addr. inet_addr may be
+                wildcarded with * to delete all hosts.
+  -s            Adds the host and associates the Internet address inet_addr
+                with the Physical address eth_addr.  The Physical address is
+                given as 6 hexadecimal bytes separated by hyphens. The entry
+                is permanent.
+  eth_addr      Specifies a physical address.
+  if_addr       If present, this specifies the Internet address of the
+                interface whose address translation table should be modified.
+                If not present, the first applicable interface will be used.
+Example:
+  > arp -s 157.55.85.212   00-aa-00-62-c6-09  .... Adds a static entry.
+  > arp -a                                    .... Displays the arp table.
+2. C:\Users\Asus>assoc
+.386=vxdfile
+.3g2=WMP11.AssocFile.3G2
+.3ga=VLC.3ga
+.3gp=WMP11.AssocFile.3GP
+.3gp2=WMP11.AssocFile.3G2
+.3gpp=WMP11.AssocFile.3GP
+.669=VLC.669
+.7z=WinRAR
+.a52=VLC.a52
+.AAC=WMP11.AssocFile.ADTS
+.ac3=VLC.ac3
+.accda=Access.ACCDAExtension.15
+.accdb=Access.Application.15
+.accdc=Access.ACCDCFile.15
+.accde=Access.ACCDEFile.15
+.accdr=Access.ACCDRFile.15
+.accdt=Access.ACCDTFile.15
+.accdu=Access.WizardUserDataFile.15
+.accdw=Access.WebApplicationReference.15
+.accft=Access.ACCFTFile.15
+.accountpicture-ms=accountpicturefile
+.ace=WinRAR
+.acl=ACLFile
+.acrobatsecuritysettings=AcroExch.acrobatsecuritysettings
+.ade=Access.ADEFile.15
+.adn=Access.BlankProjectTemplate.15
+.adp=Access.Project.15
+.ADT=WMP11.AssocFile.ADTS
+.ADTS=WMP11.AssocFile.ADTS
+.aif=GOMPlayer.aif
+.aifc=VLC.aifc
+.aiff=GOMPlayer.aiff
+.alac=GOMPlayer.alac
+.amv=GOMPlayer.amv
+.ani=anifile
+.aob=VLC.aob
+.ape=GOMPlayer.ape
+.api=AcroExch.Plugin
+.appcontent-ms=ApplicationContent
+.application=Application.Manifest
+.appref-ms=Application.Reference
+.arj=WinRAR
+.asa=aspfile
+.asf=WMP11.AssocFile.ASF
+.asp=aspfile
+.ass=GOMPlayer.ass
+.asx=GOMPlayer.asx
+.au=VLC.au
+.avi=WMP11.AssocFile.AVI
+.aw=AWFile
+.b4s=VLC.b4s
+.bat=batfile
+.bik=VLC.bik
+.blg=Diagnostic.Perfmon.Document
+.bmp=Paint.Picture
+.bz=WinRAR
+.bz2=WinRAR
+.cab=WinRAR
+.caf=GOMPlayer.caf
+.camp=campfile
+.cat=CATFile
+.cda=VLC.cda
+.cdmp=cdmpfile
+.cdr=CorelDraw.Graphic.24
+.cdrt=CorelDraw.Graphic.24
+.cdt=CorelDraw.Graphic.24
+.cdx=aspfile
+.cdxml=Microsoft.PowerShellCmdletDefinitionXML.1
+.cer=CERFile
+.chk=chkfile
+.chm=chm.file
+.CLK=CorelDraw.Graphic.24
+.cmd=cmdfile
+.cmx=CorelDRAW.CMX.24
+.com=comfile
+.compositefont=Windows.CompositeFont
+.corelextension=zcf.corelextension
+.cpl=cplfile
+.cpt=CorelPHOTOPAINT.Image.24
+.crl=CRLFile
+.crt=CERFile
+.crtx=CRTXFile
+.csl=CorelDraw.Graphic.24
+.csp=Corel.SBProfile
+.css=CSSfile
+.csv=Excel.CSV
+.cue=VLC.cue
+.cur=curfile
+.db=dbfile
+.dctx=IMEDictionaryCompiler
+.dctxc=IMEDictionaryCompiler
+.dds=ddsfile
+.der=CERFile
+.DES=CorelDESIGNER.Graphic.24
+.desklink=CLSID\{9E56BE61-C50F-11CF-9A2C-00A0C90A90CE}.deskthemepack=desktopthemepackfile
+.det=Outlook.File.det.15
+.dff=GOMPlayer.dff
+.diagcab=Diagnostic.Cabinet
+.diagcfg=Diagnostic.Config
+.diagpkg=Diagnostic.Document
+.dib=Paint.Picture
+.dll=dllfile
+.dmb=GOMPlayer.dmb
+.dmskm=GOMPlayer.dmskm
+.doc=Word.Document.8
+.dochtml=wordhtmlfile
+.docm=Word.DocumentMacroEnabled.12
+.docmhtml=wordmhtmlfile
+.docx=Word.Document.12
+.docxml=wordxmlfile
+.dot=Word.Template.8
+.dothtml=wordhtmltemplate
+.dotm=Word.TemplateMacroEnabled.12
+.dotx=Word.Template.12
+.dqy=dqyfile
+.drc=VLC.drc
+.drv=drvfile
+.dsf=GOMPlayer.dsf
+.dsn=MSDASQL
+.dss=GOMPlayer.dss
+.dts=VLC.dts
+.duk=GOMPlayer.duk
+.dv=VLC.dv
+.dvd=GOMPlayer.dvd
+.dvr-ms=GOMPlayer.dvr-ms
+.dwfx=Windows.XPSReachViewer
+.easmx=Windows.XPSReachViewer
+.edrwx=Windows.XPSReachViewer
+.elm=ELMFile
+.emf=emffile
+.eml=Outlook.File.eml.15
+.eprtx=Windows.XPSReachViewer
+.evo=GOMPlayer.evo
+.evt=evtfile
+.evtx=evtxfile
+.exe=exefile
+.f4v=VLC.f4v
+.fdf=AcroExch.FDFDoc
+.fdm=Outlook.File.fdm.15
+.fill=zcf.fillfile
+.flac=WMP11.AssocFile.FLAC
+.flv=GOMPlayer.flv
+.fon=fonfile
+.gbm=GOMPlayer.gbm
+.gcsx=GCSXFile
+.gif=giffile
+.gitattributes=txtfile
+.gitignore=txtfile
+.gitmodules=txtfile
+.glox=GLOXFile
+.gmmp=gmmpfile
+.gom=GOMPlayer.gom
+.gps=Gomplayer.Skinfile
+.gqsx=GQSXFile
+.gra=MSGraph.Chart.8
+.grp=MSProgramGroup
+.gsm=GOMPlayer.gsm
+.gvi=VLC.gvi
+.gxf=GOMPlayer.gxf
+.gz=WinRAR
+.h264=GOMPlayer.h264
+.HDZ=HDZfile
+.hlp=hlpfile
+.hol=Outlook.File.hol.15
+.hta=htafile
+.htm=htmlfile
+.html=htmlfile
+.hxa=MSHelp.hxa.2.5
+.hxc=MSHelp.hxc.2.5
+.hxd=MSHelp.hxd.2.5
+.hxe=MSHelp.hxe.2.5
+.hxf=MSHelp.hxf.2.5
+.hxh=MSHelp.hxh.2.5
+.hxi=MSHelp.hxi.2.5
+.hxk=MSHelp.hxk.2.5
+.hxq=MSHelp.hxq.2.5
+.hxr=MSHelp.hxr.2.5
+.hxs=MSHelp.hxs.2.5
+.hxt=MSHelp.hxt.2.5
+.hxv=MSHelp.hxv.2.5
+.hxw=MSHelp.hxa.2.5
+.icc=icmfile
+.icl=IconLibraryFile
+.icm=icmfile
+.ico=icofile
+.ics=Outlook.File.ics.15
+.ifo=GOMPlayer.ifo
+.igp=Intel.GraphicsControlPanel.igp.1
+.imesx=imesxfile
+.img=Windows.IsoFile
+.inf=inffile
+.infopathxml=InfoPath.Document.4
+.ini=inifile
+.iqy=iqyfile
+.iso=Windows.IsoFile
+.it=VLC.it
+.jar=WinRAR
+.jfif=pjpegfile
+.Job=JobObject
+.jod=Microsoft.Jet.OLEDB.4.0
+.jpe=jpegfile
+.jpeg=jpegfile
+.jpg=jpegfile
+.js=JSFile
+.JSE=JSEFile
+.jtx=Windows.XPSReachViewer
+.jxr=wdpfile
+.k3g=GOMPlayer.k3g
+.label=Label
+.laccdb=Access.LockFile.15
+.ldb=Access.LockFile.15
+.lex=LEXFile
+.lha=WinRAR
+.library-ms=LibraryFolder
+.lmp4=GOMPlayer.lmp4
+.lnk=lnkfile
+.log=txtfile
+.lzh=WinRAR
+.m1v=GOMPlayer.m1v
+.M2T=WMP11.AssocFile.M2TS
+.M2TS=WMP11.AssocFile.M2TS
+.M2V=GOMPlayer.m2v
+.m3u=WMP11.AssocFile.m3u
+.m3u8=VLC.m3u8
+.m4a=WMP11.AssocFile.M4A
+.m4p=VLC.m4p
+.m4v=WMP11.AssocFile.MP4
+.mad=Access.Shortcut.Module.1
+.maf=Access.Shortcut.Form.1
+.mag=Access.Shortcut.Diagram.1
+.mam=Access.Shortcut.Macro.1
+.mapimail=CLSID\{9E56BE60-C50F-11CF-9A2C-00A0C90A90CE}.maq=Access.Shortcut.Query.1
+.mar=Access.Shortcut.Report.1
+.mas=Access.Shortcut.StoredProcedure.1
+.mat=Access.Shortcut.Table.1
+.mau=Access.Shortcut.Function.1
+.mav=Access.Shortcut.View.1
+.maw=Access.Shortcut.DataAccessPage.1
+.mda=Access.Extension.15
+.mdb=Access.MDBFile
+.mdbhtml=accesshtmlfile
+.mde=Access.MDEFile.15
+.mdn=Access.BlankDatabaseTemplate.15
+.mdt=Access.WizardDataFile.15
+.mdw=Access.Workgroup.15
+.mht=mhtmlfile
+.mhtml=mhtmlfile
+.mid=VLC.mid
+.midi=WMP11.AssocFile.MIDI
+.mk3d=WMP11.AssocFile.MK3D
+.mka=GOMPlayer.mka
+.mkv=WMP11.AssocFile.MKV
+.mlc=LpkSetup.1
+.mlp=VLC.mlp
+.MOD=WMP11.AssocFile.MPEG
+.mov=WMP11.AssocFile.MOV
+.mp1=VLC.mp1
+.mp2=GOMPlayer.mp2
+.mp2v=VLC.mp2v
+.mp3=WMP11.AssocFile.MP3
+.mp4=WMP11.AssocFile.MP4
+.mp4v=WMP11.AssocFile.MP4
+.mpa=WMP11.AssocFile.MPEG
+.mpc=GOMPlayer.mpc
+.mpe=WMP11.AssocFile.MPEG
+.mpeg=WMP11.AssocFile.MPEG
+.mpeg1=VLC.mpeg1
+.mpeg2=VLC.mpeg2
+.mpeg4=VLC.mpeg4
+.mpg=WMP11.AssocFile.MPEG
+.mpga=VLC.mpga
+.mpl=GOMPlayer.mpl
+.mpq=GOMPlayer.mpq
+.mpv2=WMP11.AssocFile.MPEG
+.mqv=GOMPlayer.mqv
+.ms-one-stub=Groove.SPFS.OneNoteStub
+.ms-windows-store-license=WindowsStore.License
+.msc=MSCFile
+.msg=Outlook.File.msg.15
+.msi=Msi.Package
+.msp=Msi.Patch
+.msrcincident=RemoteAssistance.1
+.msstyles=msstylesfile
+.msu=Microsoft.System.Update.1
+.MTS=WMP11.AssocFile.M2TS
+.mtv=VLC.mtv
+.mxf=GOMPlayer.mxf
+.mydocs=CLSID\{ECF03A32-103D-11d2-854D-006008059367}
+.ncg=GOMPlayer.ncg
+.nfo=MSInfoFile
+.nk2=Outlook.File.nk2.15
+.nsv=GOMPlayer.nsv
+.nuv=VLC.nuv
+.ocx=ocxfile
+.odc=odcfile
+.odccubefile=odccubefile
+.odcdatabasefile=odcdatabasefile
+.odcnewfile=odcnewfile
+.odctablecollectionfile=odctablecollectionfile
+.odctablefile=odctablefile
+.odp=PowerPoint.OpenDocumentPresentation.12
+.ods=Excel.OpenDocumentSpreadsheet.12
+.odt=Word.OpenDocumentText.12
+.ofs=Outlook.File.ofs.15
+.oft=Outlook.File.oft.15
+.oga=VLC.oga
+.ogg=VLC.ogg
+.ogm=GOMPlayer.ogm
+.ogv=GOMPlayer.ogv
+.ogx=VLC.ogx
+.ols=OfficeListShortcut
+.oma=GOMPlayer.oma
+.one=OneNote.Section.1
+.onepkg=OneNote.Package
+.onetoc=OneNote.TableOfContents
+.onetoc2=OneNote.TableOfContents.12
+.opc=OPCFile
+.opus=VLC.opus
+.oqy=oqyfile
+.osdx=opensearchdescription
+.ost=Outlook.File.ost.15
+.otf=otffile
+.otm=Outlook.File.otm.15
+.oxps=Windows.XPSReachViewer
+.p10=P10File
+.p12=PFXFile
+.p7b=SPCFile
+.p7c=certificate_wab_auto_file
+.p7m=P7MFile
+.p7r=P7RFile
+.p7s=P7SFile
+.pab=Outlook.File.pab.15
+.pano=Panoramic File
+.partial=IE.AssocFile.PARTIAL
+.pat=CorelDraw.Graphic.24
+.pbk=pbkfile
+.pcb=PCBFile
+.pdf=AcroExch.Document.DC
+.pdfxml=AcroExch.pdfxml
+.pdx=PDXFileType
+.perfmoncfg=Diagnostic.Perfmon.Config
+.pfm=pfmfile
+.pfx=PFXFile
+.pif=piffile
+.pko=PKOFile
+.pls=VLC.pls
+.pnf=pnffile
+.png=pngfile
+.pot=PowerPoint.Template.8
+.pothtml=powerpointhtmltemplate
+.potm=PowerPoint.TemplateMacroEnabled.12
+.potx=PowerPoint.Template.12
+.ppa=PowerPoint.Addin.8
+.ppam=PowerPoint.Addin.12
+.ppkg=Microsoft.ProvTool.Provisioning.1
+.pps=PowerPoint.SlideShow.8
+.ppsm=PowerPoint.SlideShowMacroEnabled.12
+.ppsx=PowerPoint.SlideShow.12
+.ppt=PowerPoint.Show.8
+.ppthtml=powerpointhtmlfile
+.pptm=PowerPoint.ShowMacroEnabled.12
+.pptmhtml=powerpointmhtmlfile
+.pptx=PowerPoint.Show.12
+.pptxml=powerpointxmlfile
+.prf=prffile
+.prs=Corel.PrintStyle
+.ps1=Microsoft.PowerShellScript.1
+.ps1xml=Microsoft.PowerShellXMLData.1
+.psb=GOMPlayer.psb
+.psc1=Microsoft.PowerShellConsole.1
+.psd1=Microsoft.PowerShellData.1
+.psm1=Microsoft.PowerShellModule.1
+.pssc=Microsoft.PowerShellSessionConfiguration.1
+.pst=Outlook.File.pst.15
+.pub=Publisher.Document.15
+.pubhtml=publisherhtmlfile
+.pubmhtml=publishermhtmlfile
+.pwz=PowerPoint.Wizard.8
+.qcp=VLC.qcp
+.qds=SavedDsQuery
+.qt=GOMPlayer.qt
+.r00=WinRAR
+.r01=WinRAR
+.r02=WinRAR
+.r03=WinRAR
+.r04=WinRAR
+.r05=WinRAR
+.r06=WinRAR
+.r07=WinRAR
+.r08=WinRAR
+.r09=WinRAR
+.r10=WinRAR
+.r11=WinRAR
+.r12=WinRAR
+.r13=WinRAR
+.r14=WinRAR
+.r15=WinRAR
+.r16=WinRAR
+.r17=WinRAR
+.r18=WinRAR
+.r19=WinRAR
+.r20=WinRAR
+.r21=WinRAR
+.r22=WinRAR
+.r23=WinRAR
+.r24=WinRAR
+.r25=WinRAR
+.r26=WinRAR
+.r27=WinRAR
+.r28=WinRAR
+.r29=WinRAR
+.ra=VLC.ra
+.ram=VLC.ram
+.rar=WinRAR
+.rat=ratfile
+.RDP=RDP.File
+.rec=VLC.rec
+.reg=regfile
+.resmoncfg=Diagnostic.Resmon.Config
+.rev=WinRAR.REV
+.rle=rlefile
+.rll=dllfile
+.rm=GOMPlayer.rm
+.rmi=VLC.rmi
+.rmvb=GOMPlayer.rmvb
+.rpl=VLC.rpl
+.rqy=rqyfile
+.rso=GOMPlayer.rso
+.rt=GOMPlayer.rt
+.rtf=Word.RTF.8
+.s3m=VLC.s3m
+.sbv=GOMPlayer.sbv
+.scf=SHCmdFile
+.scp=txtfile
+.scr=scrfile
+.sct=scriptletfile
+.sdp=VLC.sdp
+.search-ms=SearchFolder
+.searchConnector-ms=SearchConnectorFolder
+.secstore=AcroExch.SecStore
+.settingcontent-ms=SettingContent
+.sfcache=RDBFileProperties.1
+.sh=sh_auto_file
+.shn=GOMPlayer.shn
+.shtml=shtmlfile
+.skm=GOMPlayer.skm
+.sldm=PowerPoint.SlideMacroEnabled.12
+.sldx=PowerPoint.Slide.12
+.slk=Excel.SLK
+.smi=GOMPlayer.smi
+.smil=GOMPlayer.smil
+.snd=VLC.snd
+.spc=SPCFile
+.spx=GOMPlayer.spx
+.srt=GOMPlayer.srt
+.ssa=GOMPlayer.ssa
+.sst=CertificateStoreFile
+.sub=GOMPlayer.sub
+.sup=GOMPlayer.sup
+.svg=svgfile
+.svi=GOMPlayer.svi
+.swf=GOMPlayer.swf
+.symlink=.symlink
+.sys=sysfile
+.tak=GOMPlayer.tak
+.tar=WinRAR
+.taz=WinRAR
+.tbz=WinRAR
+.tbz2=WinRAR
+.tgz=WinRAR
+.theme=themefile
+.themepack=themepackfile
+.thmx=OfficeTheme.12
+.thp=VLC.thp
+.tif=TIFImage.Document
+.tiff=TIFImage.Document
+.tp=GOMPlayer.tp
+.TS=WMP11.AssocFile.TTS
+.tta=GOMPlayer.tta
+.ttc=ttcfile
+.ttf=ttffile
+.TTS=WMP11.AssocFile.TTS
+.txt=txtfile
+.txz=WinRAR
+.UDL=MSDASC
+.URL=InternetShortcut
+.uu=WinRAR
+.uue=WinRAR
+.uxdc=UXDCFILE
+.VBE=VBEFile
+.vbs=VBSFile
+.vcf=Outlook.File.vcf.15
+.vcs=Outlook.File.vcs.15
+.vdr=GOMPlayer.vdr
+.vdw=VisioViewer.Viewer
+.vdx=VisioViewer.Viewer
+.vhd=Windows.VhdFile
+.vhdpmem=Windows.VhdPmemFile
+.vhdx=Windows.VhdFile
+.vlc=VLC.vlc
+.vob=GOMPlayer.vob
+.voc=VLC.voc
+.vp6=GOMPlayer.vp6
+.vp7=GOMPlayer.vp7
+.vqf=VLC.vqf
+.vro=VLC.vro
+.vsd=VisioViewer.Viewer
+.vsdm=VisioViewer.Viewer
+.vsdx=VisioViewer.Viewer
+.vss=VisioViewer.Viewer
+.vssm=VisioViewer.Viewer
+.vssx=VisioViewer.Viewer
+.vst=VisioViewer.Viewer
+.vstm=VisioViewer.Viewer
+.vsto=bootstrap.vsto.1
+.vstx=VisioViewer.Viewer
+.vsx=VisioViewer.Viewer
+.vtt=GOMPlayer.vtt
+.vtx=VisioViewer.Viewer
+.vxd=vxdfile
+.w64=VLC.w64
+.wab=wab_auto_file
+.wav=WMP11.AssocFile.WAV
+.wax=WMP11.AssocFile.WAX
+.wbcat=wbcatfile
+.wbk=Word.Backup.8
+.wcx=wcxfile
+.wdp=wdpfile
+.webm=GOMPlayer.webm
+.webpnp=webpnpFile
+.website=Microsoft.Website
+.wiz=Word.Wizard.8
+.wizhtml=accessthmltemplate
+.wll=Word.Addin.8
+.wm=WMP11.AssocFile.ASF
+.wma=WMP11.AssocFile.WMA
+.WMD=WMP11.AssocFile.WMD
+.wmdb=WMP.WMDBFile
+.wmf=wmffile
+.wmp=GOMPlayer.wmp
+.WMS=WMP11.AssocFile.WMS
+.wmv=WMP11.AssocFile.WMV
+.wmx=GOMPlayer.wmx
+.wmz=WMP11.AssocFile.WMZ
+.wpl=WMP11.AssocFile.WPL
+.wsc=scriptletfile
+.WSF=WSFFile
+.WSH=WSHFile
+.WTV=VLC.wtv
+.wtx=txtfile
+.wv=GOMPlayer.wv
+.wvx=GOMPlayer.wvx
+.xa=VLC.xa
+.xaml=Windows.XamlDocument
+.xbap=Windows.Xbap
+.xdp=AcroExch.XDPDoc
+.xesc=VLC.xesc
+.xevgenxml=XEV.GenericApp
+.xfdf=AcroExch.XFDFDoc
+.xht=xhtmlfile
+.xhtml=xhtmlfile
+.xla=Excel.Addin
+.xlam=Excel.AddInMacroEnabled
+.xld=Excel.Dialog
+.xlk=Excel.Backup
+.xll=Excel.XLL
+.xlm=Excel.Macrosheet
+.xls=Excel.Sheet.8
+.xlsb=Excel.SheetBinaryMacroEnabled.12
+.xlshtml=Excelhtmlfile
+.xlsm=Excel.SheetMacroEnabled.12
+.xlsmhtml=excelmhtmlfile
+.xlsx=Excel.Sheet.12
+.xlt=Excel.Template.8
+.xlthtml=Excelhtmltemplate
+.xltm=Excel.TemplateMacroEnabled
+.xltx=Excel.Template
+.xlw=Excel.Workspace
+.xlxml=Excelxmlss
+.xm=VLC.xm
+.xml=xmlfile
+.xps=Windows.XPSReachViewer
+.xrm-ms=MSSppLicenseFile
+.xsf=InfoPath.SolutionManifest.4
+.xsl=xslfile
+.xsn=InfoPath.Solution.4
+.xspf=VLC.xspf
+.xtp=XTPFile
+.xtp2=XTP2File
+.xxe=WinRAR
+.xz=WinRAR
+.z=WinRAR
+.ZFSendToTarget=CLSID\{888DCA60-FC0A-11CF-8F0F-00C04FD7D062}
+.zip=WinRAR.ZIP
+3. C:\Users\Asus>at
+The AT command has been deprecated. Please use schtasks.exe instead.
+The request is not supported.
+
+4. C:\Users\Asus>attach-vdisk
+'attach-vdisk' is not recognized as an internal or external command,
+operable program or batch file.
+
+5. C:\Users\Asus>attrib
+A                    C:\Users\Asus\.bash_history
+A                    C:\Users\Asus\.gitconfig
+A                    C:\Users\Asus\assoc
+A   H   I            C:\Users\Asus\NTUSER.DAT
+A  SH                C:\Users\Asus\ntuser.dat.LOG1
+A  SH                C:\Users\Asus\ntuser.dat.LOG2
+A  SH                C:\Users\Asus\NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TM.blf
+A  SH                C:\Users\Asus\NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000001.regtrans-ms
+A  SH                C:\Users\Asus\NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000002.regtrans-ms
+   SH                C:\Users\Asus\ntuser.ini
+
+6. C:\Users\Asus>auditpol
+Usage: AuditPol command [<sub-command><options>]
+Commands (only one command permitted per execution)
+  /?               Help (context-sensitive)
+  /get             Displays the current audit policy.
+  /set             Sets the audit policy.
+  /list            Displays selectable policy elements.
+  /backup          Saves the audit policy to a file.
+  /restore         Restores the audit policy from a file.
+  /clear           Clears the audit policy.
+  /remove          Removes the per-user audit policy for a user account.
+  /resourceSACL    Configure global resource SACLs
+Use AuditPol <command> /? for details on each command
+
+7. C:\Users\Asus>autochk
+The C:\WINDOWS\system32\autochk.exe application cannot be run in Win32 mode.
+
+8. C:\Users\Asus>autoconv
+The C:\WINDOWS\system32\autoconv.exe application cannot be run in Win32 mode.
+
+9. C:\Users\Asus>autofmt
+The C:\WINDOWS\system32\autofmt.exe application cannot be run in Win32 mode.
+
+10. C:\Users\Asus>bcdboot
+
+Bcdboot - Bcd boot file creation and repair tool.
+
+The bcdboot.exe command-line tool is used to copy critical boot files to the
+system partition and to create a new system BCD store.
+
+bcdboot <source> [/l <locale>] [/s <volume-letter> [/f <firmware>]] [/v]
+                 [/vbcd] [/m [{OS Loader ID}]] [/addlast] [/p] [/c]
+
+  source     Specifies the location of the windows system root.
+
+  /l         Specifies an optional locale parameter to use when
+             initializing the BCD store. The default is US English.
+
+  /s         Specifies an optional volume letter parameter to designate
+             the target system partition where boot environment files are
+             copied.  The default is the system partition identified by
+             the firmware.
+
+  /v         Enables verbose mode.
+
+  /vbcd      Enables BCD logging.
+
+  /m         If an OS loader GUID is provided, this option merges the
+             given loader object with the system template to produce a
+             bootable entry. Otherwise, only global objects are merged.
+
+  /d         Specifies that the existing default windows boot entry
+             should be preserved.
+
+  /f         Used with the /s command, specifies the firmware type of the
+             target system partition. Options for <firmware> are 'UEFI',
+             'BIOS', or 'ALL'.
+
+  /addlast   Specifies that the windows boot manager firmware entry
+             should be added last. The default behavior is to add it
+             first.
+
+  /bcdclean  Clean the BCD Store. By default, simply removes any duplicate
+             entries in the BCD. Can be followed by 'full'. In this case,
+             each entry is scanned. If the corresponding device for that entry
+             does not exist, the entry is deleted.
+
+  /p         Specifies that the windows boot manager firmware entry
+             position should be preserved. If entry does not exist,
+             new entry will be added in the first position.
+
+  /c         Specifies that any existing objects described by the template
+             should not be migrated.
+
+Examples: bcdboot c:\windows /l en-us
+          bcdboot c:\windows /s h:
+          bcdboot c:\windows /s h: /f UEFI
+          bcdboot c:\windows /m {d58d10c6-df53-11dc-878f-00064f4f4e08}
+          bcdboot c:\windows /d /addlast
+          bcdboot c:\windows /p
+
+11. C:\Users\Asus>bcdedit
+The boot configuration data store could not be opened.
+Access is denied.
+
+12. C:\Users\Asus>break
+
+13. C:\Users\Asus>cacls
+
+ NOTE: Cacls is now deprecated, please use Icacls.
+
+ Displays or modifies access control lists (ACLs) of files
+
+ CACLS filename [/T] [/M] [/L] [/S[:SDDL]] [/E] [/C] [/G user:perm]
+        [/R user [...]] [/P user:perm [...]] [/D user [...]]
+    filename      Displays ACLs.
+    /T            Changes ACLs of specified files in
+                  the current directory and all subdirectories.
+    /L            Work on the Symbolic Link itself versus the target
+    /M            Changes ACLs of volumes mounted to a directory
+    /S            Displays the SDDL string for the DACL.
+    /S:SDDL       Replaces the ACLs with those specified in the SDDL string
+                  (not valid with /E, /G, /R, /P, or /D).
+    /E            Edit ACL instead of replacing it.
+    /C            Continue on access denied errors.
+    /G user:perm  Grant specified user access rights.
+                  Perm can be: R  Read
+                               W  Write
+                               C  Change (write)
+                               F  Full control
+    /R user       Revoke specified user's access rights (only valid with /E).
+    /P user:perm  Replace specified user's access rights.
+                  Perm can be: N  None
+                               R  Read
+                               W  Write
+                               C  Change (write)
+                               F  Full control
+    /D user       Deny specified user access.
+ Wildcards can be used to specify more than one file in a command.
+ You can specify more than one user in a command.
+
+ Abbreviations:
+    CI - Container Inherit.
+         The ACE will be inherited by directories.
+    OI - Object Inherit.
+         The ACE will be inherited by files.
+    IO - Inherit Only.
+         The ACE does not apply to the current file/directory.
+    ID - Inherited.
+         The ACE was inherited from the parent directory's ACL.
+
+14. C:\Users\Asus>certutil
+CertUtil: -dump command completed successfully.
+
+15. C:\Users\Asus>chcp
+Active code page: 850
+
+16. C:\Users\Asus>cipher
+
+ Listing C:\Users\Asus\
+ New files added to this directory will not be encrypted.
+
+U .bash_history
+U .gitconfig
+U .ms-ad
+U .vscode
+U 3D Objects
+U assoc
+U Contacts
+U Desktop
+U Documents
+U Downloads
+U Favorites
+U Links
+U Music
+U OneDrive
+U Pictures
+U Saved Games
+U Searches
+U Videos
+
+17. C:\Users\Asus>clip
+
+INFO: Type "CLIP /?" for usage.
+
+18. C:\Users\Asus>cmd
+Microsoft Windows [Version 10.0.19044.1889]
+(c) Microsoft Corporation. All rights reserved.
+
+19. C:\Users\Asus>cmdkey
+
+Creates, displays, and deletes stored user names and passwords.
+
+The syntax of this command is:
+
+CMDKEY [{/add | /generic}:targetname {/smartcard | /user:username {/pass{:password}}} | /delete{:targetname | /ras} | /list{:targetname}]
+
+Examples:
+
+  To list available credentials:
+     cmdkey /list
+     cmdkey /list:targetname
+
+  To create domain credentials:
+     cmdkey /add:targetname /user:username /pass:password
+     cmdkey /add:targetname /user:username /pass
+     cmdkey /add:targetname /user:username
+     cmdkey /add:targetname /smartcard
+
+  To create generic credentials:
+     The /add switch may be replaced by /generic to create generic credentials
+
+  To delete existing credentials:
+     cmdkey /delete:targetname
+
+  To delete RAS credentials:
+     cmdkey /delete /ras
+
+20. C:\Users\Asus>date
+The current date is: 22/08/2022
+Enter the new date: (dd-mm-yy)
